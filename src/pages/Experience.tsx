@@ -9,7 +9,8 @@ const typeLabels = {
   fulltime: "Full-time",
   freelance: "Freelance",
   internship: "Internship",
-  contract: "Contract",
+    contract: "Contract",
+  education: "Education",
 };
 
 export default function ExperiencePage() {
