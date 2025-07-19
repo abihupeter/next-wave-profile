@@ -10,7 +10,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import NotFound from "./pages/NotFound";
-import Experience from "./pages/experience"; 
+import Experience from "./pages/experience";
 import Contact from "./pages/contact";
 import Blog from "./pages/Blog";
 
