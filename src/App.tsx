@@ -13,6 +13,7 @@ import NotFound from "./pages/NotFound";
 import Experience from "./pages/experience"; 
 import Contact from "./pages/contact";
 import Blog from "./pages/Blog";
+import "@/styles/globals.css";
 
 const queryClient = new QueryClient();
 
