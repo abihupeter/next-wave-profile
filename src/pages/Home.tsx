@@ -16,21 +16,22 @@ export default function Home() {
 
       {/* Featured Projects */}
       <section id="projects" className="py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transition-transform">
           <ScrollAnimation animation="fade-in">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                A showcase of my recent work, featuring full-stack applications and modern web solutions.
+                A showcase of my recent work, featuring full-stack applications
+                and modern web solutions.
               </p>
             </div>
           </ScrollAnimation>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {featuredProjects.map((project, index) => (
-              <ScrollAnimation 
-                key={project.id} 
-                animation="slide-up" 
+              <ScrollAnimation
+                key={project.id}
+                animation="slide-up"
                 delay={index * 100}
               >
                 <Card className="hover-lift shadow-card group">
@@ -52,7 +53,11 @@ export default function Home() {
                     </CardDescription>
                     <div className="flex flex-wrap gap-2 mb-4">
                       {project.technologies.slice(0, 3).map((tech) => (
-                        <Badge key={tech} variant="secondary" className="text-xs">
+                        <Badge
+                          key={tech}
+                          variant="secondary"
+                          className="text-xs"
+                        >
                           {tech}
                         </Badge>
                       ))}
@@ -64,14 +69,22 @@ export default function Home() {
                     </div>
                     <div className="flex items-center gap-2">
                       <Button size="sm" variant="outline" asChild>
-                        <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <Github className="h-4 w-4 mr-2" />
                           Code
                         </a>
                       </Button>
                       <Button size="sm" asChild>
-                        <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="h-4 w-4 mr-2" />
+                        <a
+                          href={project.demo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <ExternalLink className="h-4 w-4 mr-2 hover:scale-105" />
                           Demo
                         </a>
                       </Button>
@@ -84,7 +97,10 @@ export default function Home() {
 
           <ScrollAnimation animation="fade-in">
             <div className="text-center">
-              <Button asChild className="primary-gradient hover-glow">
+              <Button
+                asChild
+                className="primary-gradient hover-glow hover:scale-105"
+              >
                 <Link to="/projects">
                   View All Projects
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -109,9 +125,9 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
             {topSkills.map((skill, index) => (
-              <ScrollAnimation 
-                key={skill.name} 
-                animation="slide-up" 
+              <ScrollAnimation
+                key={skill.name}
+                animation="slide-up"
                 delay={index * 50}
               >
                 <Card className="hover-lift shadow-card group text-center">
@@ -124,7 +140,7 @@ export default function Home() {
                     </div>
                     <h3 className="font-semibold mb-2">{skill.name}</h3>
                     <div className="w-full bg-muted rounded-full h-2">
-                      <div 
+                      <div
                         className="primary-gradient h-2 rounded-full transition-all duration-1000"
                         style={{ width: `${skill.level * 10}%` }}
                       />
@@ -149,32 +165,97 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-background">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-20 bg-background  ">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center hover:scale-105 transition-transform">
           <ScrollAnimation animation="fade-in">
             <Card className="shadow-elegant">
               <CardContent className="p-12">
                 <h2 className="text-3xl font-bold mb-4">Let's Work Together</h2>
                 <p className="text-xl text-muted-foreground mb-8">
-                  I'm always interested in new opportunities and exciting projects. 
-                  Let's discuss how we can bring your ideas to life.
+                  I'm always interested in new opportunities and exciting
+                  projects. Let's discuss how we can bring your ideas to life.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button asChild className="primary-gradient hover-glow">
+                  <Button
+                    asChild
+                    className="primary-gradient hover-glow hover:scale-105"
+                  >
                     <Link to="/contact">
                       Get In Touch
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
-                  <Button variant="outline" asChild className="hover-lift">
-                    <a href="mailto:hello@johndoe.dev">
-                      Send Email
-                    </a>
+                  <Button variant="outline" asChild className="hover-lift ">
+                    <a href="mailto:abihupita@gmail.com">Send Email</a>
                   </Button>
                 </div>
               </CardContent>
             </Card>
           </ScrollAnimation>
+        </div>
+      </section>
+      <section className=" py-16">
+        <div className="mx-auto px-1 container border-t border-gray-800 hover:scale-105 transition-transform">
+          {/* Section Header */}
+          <div className="text-center">
+            <h2 className="mb-2 mt-10 font-bold text-white text-4xl">
+              Why Work With Me?
+            </h2>
+            <p className="text-gray-600 text-lg mb-8">
+              I have worked with the best companies around the globe
+            </p>
+
+            {/* Flex container for logos */}
+            <div className="flex flex-wrap justify-center items-center gap-8">
+              {/* Partner Logo 1 */}
+              <a
+                href="https://alliancerealtorsltd.co.ke/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/kodi-logo.png"
+                  alt="Alliance Realtors"
+                  className="h-20 object-contain hover:opacity-90 transition hover:scale-110"
+                />
+              </a>
+
+              {/* Partner Logo 2 */}
+              <a
+                href="https://unitysacco.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/unity1.png"
+                  alt="unity sacco"
+                  className="h-20 object-contain hover:opacity-90 transition hover:scale-110"
+                />
+              </a>
+              <a
+                href="https://jumuisha.com/home"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/download.jpeg"
+                  alt="Jumuisha"
+                  className="h-20 object-contain hover:opacity-90 transition hover:scale-110"
+                />
+              </a>
+              <a
+                href="https://www.runwayafrika.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/runway.png"
+                  alt="runwayafrika"
+                  className="h-20 object-contain hover:opacity-90 transition hover:scale-110"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </div>

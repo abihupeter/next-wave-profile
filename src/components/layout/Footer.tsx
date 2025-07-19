@@ -1,11 +1,19 @@
-import { Github, Linkedin, Twitter, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Twitter, Mail, Heart, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const socialLinks = [
-  { name: 'GitHub', href: 'https://github.com/username', icon: Github },
-  { name: 'LinkedIn', href: 'https://linkedin.com/in/username', icon: Linkedin },
-  { name: 'Twitter', href: 'https://twitter.com/username', icon: Twitter },
-  { name: 'Email', href: 'mailto:hello@johndoe.dev', icon: Mail }
+  { name: "GitHub", href: "https://github.com/abihupeter", icon: Github },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/abihu-peter-94b89125a/",
+    icon: Linkedin,
+  },
+  {
+    name: "instagram",
+    href: "https://www.instagram.com/pierr.e095/",
+    icon: Instagram,
+  },
+  { name: "Email", href: "mailto:abihupita@gmail.com", icon: Mail },
 ];
 
 export function Footer() {
@@ -18,11 +26,11 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold primary-gradient bg-clip-text text-transparent">
-              John Doe
+              Abihu Peter
             </h3>
             <p className="text-muted-foreground">
-              Full Stack Developer passionate about creating exceptional digital experiences 
-              with modern technologies.
+              Full Stack Developer passionate about creating exceptional digital
+              experiences with modern technologies.
             </p>
           </div>
 
@@ -30,19 +38,34 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Quick Links</h4>
             <nav className="flex flex-col space-y-2">
-              <a href="/" className="text-muted-foreground hover:text-primary transition-smooth">
+              <a
+                href="/"
+                className="text-muted-foreground hover:text-primary transition-smooth hover:scale-105"
+              >
                 Home
               </a>
-              <a href="/about" className="text-muted-foreground hover:text-primary transition-smooth">
+              <a
+                href="/about"
+                className="text-muted-foreground hover:text-primary transition-smooth hover:scale-105"
+              >
                 About
               </a>
-              <a href="/projects" className="text-muted-foreground hover:text-primary transition-smooth">
+              <a
+                href="/projects"
+                className="text-muted-foreground hover:text-primary transition-smooth hover:scale-105"
+              >
                 Projects
               </a>
-              <a href="/experience" className="text-muted-foreground hover:text-primary transition-smooth">
+              <a
+                href="/experience"
+                className="text-muted-foreground hover:text-primary transition-smooth hover:scale-105"
+              >
                 Experience
               </a>
-              <a href="/contact" className="text-muted-foreground hover:text-primary transition-smooth">
+              <a
+                href="/contact"
+                className="text-muted-foreground hover:text-primary transition-smooth hover:scale-105"
+              >
                 Contact
               </a>
             </nav>
@@ -58,7 +81,7 @@ export function Footer() {
                   variant="outline"
                   size="icon"
                   asChild
-                  className="hover-glow"
+                  className="hover-glow hover:scale-105"
                 >
                   <a href={link.href} target="_blank" rel="noopener noreferrer">
                     <link.icon className="h-4 w-4" />
@@ -77,11 +100,11 @@ export function Footer() {
         <div className="mt-8 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-muted-foreground">
-              © {currentYear} John Doe. All rights reserved.
+              © {currentYear} Abihu Peter. All rights reserved.
             </p>
-            <div className="flex items-center space-x-1 text-sm text-muted-foreground">
-              <span>Made with</span>
-              <Heart className="h-4 w-4 text-red-500 fill-current" />
+            <div className="flex items-center space-x-1 text-sm text-muted-foreground underline">
+              <span>By abihu;</span>
+
               <span>using React & Tailwind CSS</span>
             </div>
           </div>

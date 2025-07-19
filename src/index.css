@@ -267,3 +267,10 @@
     box-shadow: 0 0 40px hsl(var(--primary-glow) / 0.5);
   }
 }
+* body {
+  font-family: 'Axiforma', sans-serif;
+}
+
+h1, h2, h3, .brand-title {
+  font-family: 'Fonarto', sans-serif;
+}

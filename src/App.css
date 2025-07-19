@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+* body {
+  font-family: 'Axiforma', sans-serif;
+}
+
+h1, h2, h3, .brand-title {
+  font-family: 'Fonarto XT', sans-serif;
+}

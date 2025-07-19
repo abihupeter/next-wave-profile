@@ -60,7 +60,7 @@ export default function Projects() {
               ))}
             </div>
           </div>
-          <div className="flex items-center gap-2 pt-4 border-t">
+          {/* <div className="flex items-center gap-2 pt-8 border-t">
             <Button size="sm" variant="outline" asChild className="flex-1">
               <a href={project.github} target="_blank" rel="noopener noreferrer">
                 <Github className="h-4 w-4 mr-2" />
@@ -73,7 +73,7 @@ export default function Projects() {
                 Demo
               </a>
             </Button>
-          </div>
+          </div> */}
         </CardContent>
       </Card>
     </ScrollAnimation>
@@ -162,7 +162,7 @@ export default function Projects() {
 
       {/* CTA Section */}
       <section className="py-20 hero-gradient">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center ">
           <ScrollAnimation animation="fade-in">
             <Card className="shadow-elegant">
               <CardContent className="p-12">
@@ -178,7 +178,7 @@ export default function Projects() {
                     </a>
                   </Button>
                   <Button variant="outline" className="hover-lift">
-                    <a href="mailto:hello@johndoe.dev" className="flex items-center">
+                    <a href="mailto:abihupita@gmail.com" className="flex items-center">
                       Send Email
                     </a>
                   </Button>
