@@ -41,7 +41,7 @@ export function Hero() {
         <ScrollAnimation animation="fade-in">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12 text-left">
             {/* Left: Text Content in blue box */}
-            <div className="bg-blue-600/10 backdrop-blur-md p-8 rounded-2xl w-full lg:w-80% space-y-6 shadow-md hover:scale-105 transition-transform">
+            <div className="bg-blue-600/10 backdrop-blur-md p-8 rounded-2xl w-full lg:w-80% space-y-6 shadow-md hover:scale-105 transition-transform mt-16 sm:mt-0">
               <TypingNameHeading />
 
               <div className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground min-h-[2rem]">
