@@ -8,10 +8,10 @@ import { skills, skillsByCategory } from '@/data/skills';
 import { Link } from 'react-router-dom';
 
 const stats = [
-  { icon: Code, label: 'Projects Completed', value: '50+' },
-  { icon: Users, label: 'Happy Clients', value: '25+' },
+  { icon: Code, label: 'Projects Completed', value: '20+' },
+  { icon: Users, label: 'Happy Clients', value: '5+' },
   { icon: Coffee, label: 'Cups of Coffee', value: '1000+' },
-  { icon: Award, label: 'Years Experience', value: '5+' }
+  { icon: Award, label: 'Years Experience', value: '1+' }
 ];
 
 export default function About() {
