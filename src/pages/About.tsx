@@ -3,14 +3,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
 import { Button } from '@/components/ui/button';
-import { Download, Award, Code, Users, Coffee } from 'lucide-react';
+import { Download, Award, Code, Users, Coffee, Bug } from 'lucide-react';
 import { skills, skillsByCategory } from '@/data/skills';
 import { Link } from 'react-router-dom';
 
 const stats = [
-  { icon: Code, label: 'Projects Completed', value: '20+' },
+  { icon: Code, label: 'Projects Completed', value: '6+' },
   { icon: Users, label: 'Happy Clients', value: '5+' },
-  { icon: Coffee, label: 'Cups of Coffee', value: '1000+' },
+  { icon: Coffee, label: 'Cups of Coffee', value: '100+' },
   { icon: Award, label: 'Years Experience', value: '1+' }
 ];
 
@@ -211,6 +211,18 @@ export default function About() {
                       practices.
                     </p>
                   </div>
+                </div>
+                <div className="text-center pt-8">
+                  <div className="w-16 h-16 mx-auto mb-4 primary-gradient rounded-full flex items-center justify-center">
+                    <Bug className="h-8 w-8 text-primary-foreground" />
+                  </div>
+                  <h3 className="font-semibold mb-2">Features & Bugs</h3>
+                  <p className="text-muted-foreground">
+                    Improvising bugs that work well and using them as features
+                  </p>
+                  <p className="text-muted-foreground text-sm italic">
+                    ~ 'its not a bug, its a feature' ~
+                  </p>
                 </div>
               </CardContent>
             </Card>

@@ -5,7 +5,7 @@ import { ScrollAnimation } from '@/components/ui/scroll-animation';
 import TypingNameHeading from './nametyping';
 
 
-const roles = ["Next.js", "MongoDB", "Express.js", "Node.js", "React.js"];
+const roles = ["Next.js", "Tailwind Css", "TypeScript", "Javasript", "React.js"];
 
 export function Hero() {
   const [currentRole, setCurrentRole] = useState(0);

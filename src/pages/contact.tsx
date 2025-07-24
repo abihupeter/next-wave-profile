@@ -110,7 +110,7 @@ export default function Contact() {
             <div className="flex items-center gap-2">
               💼 Currently{" "}
               <span className="font-medium text-green-500 hover:scale-105">
-                open to freelance work
+                open to work
               </span>
             </div>
 

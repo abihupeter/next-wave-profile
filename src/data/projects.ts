@@ -116,7 +116,7 @@ export const projects: Project[] = [
     demo: "https://next-wave-profile-qkji.vercel.app/",
     image: "/images/prtfolio.jpg",
     featured: true,
-    category: "fullstack",
+    category: "web",
   },
   {
     id: "6",
@@ -138,7 +138,7 @@ export const projects: Project[] = [
     demo: "https://chat-app-demo.vercel.app",
     image: "/images/chat.jpg",
     featured: false,
-    category: "fullstack",
+    category: "mobile",
   },
 ];
 
