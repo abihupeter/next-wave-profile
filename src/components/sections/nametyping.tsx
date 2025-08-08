@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export default function TypingNameHeading() {
-  const texts = ["Abihu Peter", "a Developer"];
+  const texts = ["Abihu Peter", "a Developer", "a Designer", "a Creator"];
   const [displayText, setDisplayText] = useState("");
   const [textIndex, setTextIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
