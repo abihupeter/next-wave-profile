@@ -104,7 +104,7 @@ export default function Contact() {
                 download
                 className="hover:underline hover:scale-105"
               >
-                Download My CV
+                Download CV
               </a>
             </div>
             <div className="flex items-center gap-2">

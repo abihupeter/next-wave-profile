@@ -8,7 +8,7 @@ export interface Experience {
   description: string;
   responsibilities: string[];
   technologies: string[];
-  type: 'fulltime' | 'contract' | 'freelance' | 'internship'| 'education';
+  type: "fulltime" | "contract" | "freelance" | "internship" | "education";
 }
 
 export const experiences: Experience[] = [
@@ -69,32 +69,32 @@ export const experiences: Experience[] = [
     type: "fulltime",
   },
 
-  // {
-  //   id: "3",
-  //   title: "Frontend Developer",
-  //   company: "Digital Agency Pro",
-  //   location: "New York, NY",
-  //   startDate: "2019-03",
-  //   endDate: "2020-05",
-  //   description:
-  //     "Specialized in creating engaging user interfaces and optimizing user experiences.",
-  //   responsibilities: [
-  //     "Developed responsive websites and web applications using React and Vue.js",
-  //     "Collaborated with designers to implement pixel-perfect UI designs",
-  //     "Optimized websites for performance and SEO",
-  //     "Implemented accessibility best practices",
-  //     "Worked with backend teams to integrate APIs",
-  //   ],
-  //   technologies: ["React", "Vue.js", "JavaScript", "CSS3", "Sass", "Webpack"],
-  //   type: "fulltime",
-  // },
+  {
+    id: "3",
+    title: "Frontend Developer",
+    company: "Catholic Organization of Relief Development Aid (CORDAID)",
+    location: "kakamega, Kenya",
+    startDate: "2025-08",
+    endDate: "2025-09",
+    description:
+      "Specialized in creating engaging user interfaces and optimizing user experiences.",
+    responsibilities: [
+      "Developed responsive web applications using React and KoboToolbox",
+      "Collaborated with designers to implement pixel-perfect UI designs",
+      "Optimized websites for performance and SEO",
+      "Implemented accessibility best practices",
+      "Worked with backend teams to integrate APIs",
+    ],
+    technologies: ["React", "KoboToolbox", "JavaScript", "Webpack"],
+    type: "contract",
+  },
   {
     id: "4",
     title: "Freelance Web Developer",
     company: "Runway Africa",
     location: "Remote",
-    startDate: "2022-01",
-    endDate: "2022-06",
+    startDate: "2024-01",
+    endDate: "2024-06",
     description:
       "Provided web development services to small businesses and startups.",
     responsibilities: [
@@ -128,6 +128,8 @@ export const experiences: Experience[] = [
   },
 ];
 
-export const currentExperience = experiences.find(exp => exp.endDate === 'Present');
-export const getExperienceByType = (type: Experience['type']) => 
-  experiences.filter(exp => exp.type === type);
+export const currentExperience = experiences.find(
+  (exp) => exp.endDate === "Present"
+);
+export const getExperienceByType = (type: Experience["type"]) =>
+  experiences.filter((exp) => exp.type === type);
