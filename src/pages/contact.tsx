@@ -121,7 +121,7 @@ export default function Contact() {
                   href="tel:+254794436286"
                   className="hover:underline hover:scale-105"
                 >
-                  +254 794 436 286
+                  call me
                 </a>
               </div>
               <div className="flex items-center gap-2">
