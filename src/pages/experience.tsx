@@ -28,7 +28,7 @@ export default function ExperiencePage() {
         <h1 className="text-4xl font-bold mb-8 text-center">
           My{" "}
           <span className="primary-gradient bg-clip-text text-transparent">
-            Experience
+            Experience and education🎓
           </span>
         </h1>
 
